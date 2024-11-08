@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - new prescription</title>
+    <style>
+        /* Basic Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .nav-links {
+            margin-top: 5px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Form Section */
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>New Prescription</h1>
+        <div class="nav-links">
+            <a href="baar.html">Home</a>
+            <a href="projectservices.html">Services</a>
+            <a href="projectappoint.html">Book Appointment</a>
+            <a href="projectknowabt.html">Know About Doctors</a>
+            <div class="dropdown">
+                <a href="#">Help</a>
+                <div class="dropdown-content">
+                    <a href="projectabout.html">About Us</a>
+                    <a href="projectcontact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Booking Form -->
+    <div class="form-container">
+        <h2>Book Your Appointment</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">--Select Doctor--</option>
+                    <option value="Dr. mondal">Dr. Mondal</option>
+                    <option value="Dr. khan">Dr. Khan</option>
+                    <option value="Dr. singh">Dr. Singh</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Appointment Date</label>
+                <input type="text" id="appointment-date" name="appointment-date" placeholder="Enter date">
+            </div>
+            <div class="form-group">
+                <label for="patient-status">Are you a new patient?</label>
+                <input type="checkbox" id="patient-status" name="patient-status" value="new"> Yes, I am a new patient.
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Appointment</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

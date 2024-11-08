@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Prescription - Appointment Booking</title>
+  <style>
+    /* Basic Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #4CAF50;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .nav-links {
+      margin-top: 5px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #4CAF50;
+      min-width: 160px;
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #45a049;
+    }
+
+    /* Banner */
+    .banner {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Doctors Section */
+    .doctors-section {
+      padding: 10px;
+      text-align: center;
+      background-color: #e9ecef; /* Light gray background */
+    }
+
+    .doctors {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between cards */
+      margin-top: 10px;
+    }
+
+    .doctor-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      width: 150px;
+      padding: 10px;
+    }
+
+    .doctor-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Advertisement Section */
+    .advertisement {
+      background-color: #ff5722;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>New Prescription</h1>
+    <div class="nav-links">
+      <a href="project2home.html">Home</a>
+      <a href="projectservices.html">Services</a>
+      <a href="projectappoint.html">Book Appointment</a>
+      <a href="projectknowabt.html">Know About centers</a>
+      <!-- Help Dropdown -->
+      <div class="dropdown">
+        <a href="#help">Help</a>
+        <div class="dropdown-content">
+          <a href="projectcontact.html">Contact</a>
+          <a href="projectabout.html">About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <h2>Welcome to New Prescription!</h2>
+    <p>Your health is our top priority.</p>
+    <button style="padding: 8px 16px; background-color: #45a049; color: white; border: none;">Book an Appointment Now!</button>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="doctors-section">
+    <h2>Meet Our Expert Doctors</h2>
+    <div class="doctors">
+      <div class="doctor-card">
+        <img src="yoga.jpg" alt="dr. Pranab Mondal">
+        <h3>Dr. pranab mondal</h3>
+        <p>yoga specialist</p>
+      </div>
+      <div class="doctor-card">
+        <img src="ayurvedA.jpg" alt="Dr. Sara Khan">
+        <h3>Dr. Sara khan</h3>
+        <p>Ayurveda Specialist</p>
+      </div>
+      <div class="doctor-card">
+        <img src="dietician.jpg" alt="Dr. riya singh">
+        <h3>Dr. riya singh </h3>
+        <p>dietician</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advertisement Section -->
+  <section class="advertisement">
+    <p>Special Offer: Get 20% off on your first consultation. Book now!</p>
+  </section>
+
+</body>
+</html>

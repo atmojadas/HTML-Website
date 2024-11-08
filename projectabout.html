@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - New prescription </title>
+  <style>
+    /* Basic Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #4CAF50;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .nav-links {
+      margin-top: 5px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #4CAF50;
+      min-width: 160px;
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #45a049;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 20px;
+      text-align: center;
+      background-color: #ffffff; /* White background */
+      flex-grow: 1; /* Allow the about section to expand and fill available space */
+    }
+
+    .about-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      margin: 10px 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    /* Social Media Icons */
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-media img {
+      width: 30px; /* Set icon size */
+      height: auto;
+      margin: 0 10px; /* Space between icons */
+      cursor: pointer; /* Cursor changes to pointer on hover */
+    }
+
+    /* Advertisement Section */
+    .advertisement {
+      background-color: rgba(255, 196, 0, 0.636);
+      color:black;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      position: fixed; /* Fixed positioning */
+      bottom: 0; /* Align to the bottom of the viewport */
+      left: 0;
+      right: 0; /* Stretch across the width of the screen */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>HappyLife</h1>
+    <div class="nav-links">
+      <a href="/baar.html">Home</a>
+      <a href="/projectservices.html">Services</a>
+      <a href="/projectappoint.html">Book Appointment</a>
+      <a href="/projectknowabt.html">Know About Yoga</a>
+      <!-- Help Dropdown -->
+      <div class="dropdown">
+        <a href="#help">Help</a>
+        <div class="dropdown-content">
+          <a href="projectcontact.html">Contact</a>
+          <a href="projectabout.html">About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Us</h2>
+    <img src="happy life.jpg" alt="New Prescription Team" style="width: 300px; height: auto; margin-bottom: 20px;"> <!-- Replace with your image URL -->
+    <p>At New Prescription, our mission is to provide holistic healthcare solutions that prioritize your well-being. We believe in the power of wellness and aim to enhance the quality of life for all our patients.</p>
+    <p>Our team of expert doctors and wellness specialists are dedicated to offering personalized care tailored to your individual needs. We strive to create a supportive environment that fosters healing and health.</p>
+    <p>We understand that every patient is unique, which is why we take the time to listen to your concerns and develop a treatment plan that works for you. Your health is our top priority.</p>
+    <p>Join us on the journey to a healthier, happier life!</p>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+      <a href="https://linkedIn.com" target="_blank"><img src="linkedn.png" alt=""></a> <!-- Replace with your LinkedIn icon URL -->
+      <a href="https://instagram.com" target="_blank"><img src="instagram.jpg" alt="Instagram"></a> <!-- Replace with your Instagram icon URL -->
+      <a href="https://twitter.com" target="_blank"><img src="twitter.jpg" alt="Twitter"></a> <!-- Replace with your Twitter icon URL -->
+      <a href="https://www.facebook.com" target="_blank"><img src="fb.png" alt="Facebook"></a> <!-- Replace with your Facebook icon URL -->
+    </div>
+  </section>
+
+  <!-- Advertisement Section -->
+  <section class="advertisement">
+    <p>Special Offer: Get 20% off on your first consultation. Book now!</p>
+  </section>
+
+</body>
+</html>
